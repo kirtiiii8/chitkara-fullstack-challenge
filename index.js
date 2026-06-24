@@ -29,7 +29,9 @@ function getDepth(node, graph) {
 
     return maxDepth + 1;
 }
-
+app.get("/", (req, res) => {
+    res.send("API Running Successfully");
+});
 
 app.post("/bfhl", (req, res) => {
 
